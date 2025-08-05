@@ -32,5 +32,5 @@ library(ggplot2)
 ```
 
 ```{r}
-ggplot(data = penguins, aes(x = species, y = flipper_length_mm)) + geom_point(aes(color = species)) + scale_color_manual(values = c("red", "blue", "black")) + labs(x = "Species", y = "Flipper length", title = "Penguin bill length VS bill depth")
+ggplot(data = penguins, aes(x = species, y = flipper_length_mm)) + geom_point(aes(color = species)) + scale_color_manual(values = c("red", "blue", "green")) + labs(x = "Species", y = "Flipper length", title = "Penguin bill length VS bill depth")
 ```
