@@ -9,3 +9,28 @@ library(tidyverse)
 library(palmerpenguins)
 
 ```
+
+```{r}
+fx <- expression(x^2)
+df_dx <- D(expr = fx, name = "x")
+df_dx
+```
+
+```{r}
+pa <- expression(2 * ((3*a) + 2)^4 - 5)
+da_db <- D(expr = pa, name = "a")
+a <- 1.2
+eval(da_db)
+```
+
+```{r}
+library(palmerpenguins)
+```
+
+```{r}
+library(ggplot2)
+```
+
+```{r}
+ggplot(data = penguins, aes(x = species, y = flipper_length_mm)) + geom_point(aes(color = species)) + scale_color_manual(values = c("red", "blue", "pink")) + labs(x = "Species", y = "Flipper length", title = "Penguin bill length VS bill depth")
+```
