@@ -1,0 +1,11 @@
+---
+title: "eds212-day2-tasks"
+format: html
+editor: visual
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+
+```
